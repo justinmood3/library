@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101326"><title>PageTurn — Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="index.html"><span class="brand-mark">P</span><span>PageTurn<small>LIBRARY SPACE</small></span></a>
+      <div class="side-label">WORKSPACE</div>
+      <nav id="sideNav"><a class="nav-link active" href="#dashboard"><span>▦</span> Overview</a><a class="nav-link" href="#books"><span>▤</span> Bookstore</a><a class="nav-link" href="#activity"><span>◷</span> My activity</a></nav>
+      <div class="sidebar-bottom"><div class="help-card"><span class="help-icon">✦</span><strong>A world of stories</strong><p>Discover your next favourite book and keep learning.</p></div><button class="logout-link" id="logoutBtn">↪ <span>Sign out</span></button></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button class="mobile-menu" id="menuBtn" aria-label="Open menu">☰</button><div class="breadcrumb">Workspace <span>/</span> <b id="crumb">Overview</b></div><div class="top-actions"><span class="today" id="today"></span><div class="avatar" id="avatar">G</div><div class="user-mini"><b id="topName">Guest</b><small id="topRole">Welcome</small></div></div></header>
+      <section class="content" id="content"><div class="loading"><span class="spinner"></span> Loading your library...</div></section>
+      <footer>© <span id="year"></span> PageTurn Library <span>Made for curious minds.</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <dialog id="readDialog" class="read-dialog"><form method="dialog"><button class="dialog-close" aria-label="Close">×</button></form><div id="readContent"></div></dialog>
+</body>
+</html>
